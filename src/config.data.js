@@ -29,9 +29,28 @@ const BrandsSection = [logo1, logo2, logo3, logo4, logo5];
 const PlanningSection = {
   title1: "Plan Better. Do Better.",
   title2: "Do Better.",
-  description: "Spend sometime planning the success map",
-  hidableDescription:
-    "Breakdown your strategy into smaller objectives and measure the success with key results & KPIs.",
+  mobileTextList: [
+    {
+      title: "Spend sometime planning the success map",
+    },
+  ],
+  pcTextList: [
+    {
+      title: "Manage Strategy Execution",
+      description:
+        "Breakdown your strategy into smaller objectives and measure the success with key results & KPIs.",
+    },
+    {
+      title: "Align your Projects with Objectives",
+      description:
+        "Create initiatives and tasks in line with the goals made. Capture value of every effort undertaken.",
+    },
+    {
+      title: "Feedback to keep things on track",
+      description:
+        "Shorter feedback cycles ensure that the team never goes off track.",
+    },
+  ],
 };
 
 const TestimonialSection = {
@@ -39,27 +58,27 @@ const TestimonialSection = {
   list: [
     {
       image: test1,
-      name: "Harriet Mitchell",
-      position: "Marketing Director",
-      title: "Make effective leadership",
+      name: "Deepu Nagaraj",
+      position: "Senior HR Lead | PhableCare",
+      title: "Improves Work Environment Quality",
       description:
-        "Lorem ipsum dolor sit amet, consctetur adipiscing elit. Lorem ipsum dolor sit. Lorem ipsum dolLorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consctetur adipiscing elit. Lorem",
+        "Fleo is the most responsive and flexible PMS currently. For over 800 employees & 100+ configurations, we implemented it all within 3 weeks.All I care about is creating the best working environment, & Fleo helps me do that.",
     },
     {
       image: test2,
-      name: "Jhon Fleo",
-      position: "Managing Director",
-      title: "Make effective leadership",
+      name: "Lalit Bhise",
+      position: "CEO | Bizom",
+      title: "Makes for Effective Leadership",
       description:
-        "Fleo  shows you the areas that need your attention, it will be your go- to tool for internal business reviews. it will be your go- to tool for internal business reviews",
+        "Fleo got our rapidly expanding team in sync. My 90 min weekly review is down to 30 mins. I am well aware of every bit of progress and bottleneck. Thanks to Fleo, our Vision, Goals & Efforts are completely aligned.",
     },
     {
       image: test3,
-      name: "Fleo Harriet",
-      position: "Product Analyst",
-      title: "Take faster and impactful decision using Fleo",
+      name: "Aamith Menon",
+      position: "Senior HR Lead | PhableCare",
+      title: "Improves Work Environment Quality",
       description:
-        "Fleo  shows you the areas that need your attention, it will be your go- to tool for internal business reviews.",
+        "Fleo is the most responsive and flexible PMS currently. For over 800 employees & 100+ configurations, we implemented it all within 3 weeks.All I care about is creating the best working environment, & Fleo helps me do that.",
     },
   ],
 };

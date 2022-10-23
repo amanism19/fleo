@@ -133,7 +133,7 @@ const PartnersMain = styled.div`
     .client_logo {
       height: 24px;
     }
-    width: calc(108vw);
+    width: calc(100vw);
   }
 `;
 

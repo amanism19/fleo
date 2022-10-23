@@ -1,20 +1,69 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "@emotion/styled";
-import image from "../../images/section_2_ilstr.png";
+// import image from "../../images/section_2_ilstr.png";
+import image from "../../images/Animation-5 (1500 × 1500px).gif";
+// import video from "../../videos/Animation-s2-2.mp4";
 import { PlanningSection } from "../../config.data";
+// import useVideoPlayer from "../../hooks/useVideoPlayer";
+// import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+// import {
+//   useIntersectionObserver,
+//   useTrackVisibility,
+// } from "react-intersection-observer-hook";
 
 function Section2() {
+  const videoElement = useRef(null);
+  // const { playerState, handleOnTimeUpdate } = useVideoPlayer(videoElement);
+  // const [ref, { entry }] = useIntersectionObserver();
+  // const isVisible = entry && entry.isIntersecting;
+  // const [isPlayed, setIsPlayed] = useState(false);
+
+  // const [ref, isVisible] = useIntersectionObserver();
+
+  // useEffect(() => {
+  //   if (isVisible && !isPlayed) {
+  //     videoElement.current.play();
+  //     console.log("play");
+  //   }
+  // }, [isVisible, isPlayed]);
+
+  // useEffect(() => {
+  //   if (Math.round(playerState.progress) === 100) {
+  //     videoElement.current.pause();
+  //     setIsPlayed(true);
+  //   }
+  // }, [playerState.progress]);
+
   return (
     <Root>
-      <Image src={image} />
-      <TextSection>
-        <h2 className="hidable-h3">{PlanningSection.title1}</h2>
-        {/* <h2>{PlanningSection.title2}</h2> */}
-        <p>
-          <h3>{PlanningSection.description}{" "}</h3>
-          <span className="hidable">{PlanningSection.hidableDescription}</span>
-        </p>
-      </TextSection>
+      <Main>
+        <Image src={image} />
+        {/* <VideoContainer>
+          <Video
+            src={video}
+            ref={videoElement}
+            onTimeUpdate={handleOnTimeUpdate}
+            preload
+          />
+        </VideoContainer> */}
+        {/* <video src="" ></video> */}
+        <TextSection>
+          <h2 className="hidable-h3-">{PlanningSection.title1}</h2>
+          {/* <h2>{PlanningSection.title2}</h2> */}
+
+          {PlanningSection.mobileTextList.map(({ title }) => (
+            <p className="hidable-forPC">
+              <h3>{title} </h3>
+            </p>
+          ))}
+          {PlanningSection.pcTextList.map(({ title, description }) => (
+            <p className="hidable">
+              <h3>{title} </h3>
+              <span>{description}</span>
+            </p>
+          ))}
+        </TextSection>
+      </Main>
     </Root>
   );
 }
@@ -22,8 +71,20 @@ function Section2() {
 export default Section2;
 
 const Root = styled.div`
+  @media (max-width: 1116px) {
+    margin-top: 22px;
+  }
   display: flex;
-  background: #56402a;
+  background: #4e371f;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+`;
+
+const Main = styled.div`
+  align-self: center;
+  display: flex;
+  /* background: #523a23; */
   align-items: center;
   max-width: var(--max-box-width);
   padding-block: 100px;
@@ -34,6 +95,33 @@ const Root = styled.div`
   @media (max-width: 887px) {
     flex-direction: column-reverse;
     padding-block: 50px;
+  }
+`;
+
+const Video = styled.video`
+  width: 103%;
+  height: auto;
+  flex: 1;
+  background: #523a23;
+  background-color: transparent !important;
+  clip-path: inset(1px 1px);
+`;
+
+const VideoContainer = styled.div`
+  display: flex;
+  /* flex: 0.5; */
+  height: auto;
+  /* overflow: hidden; */
+  width: 50%;
+  @media (max-width: 887px) {
+    flex-direction: column-reverse;
+    padding-block: 50px;
+    width: 80%;
+  }
+  && {
+    border: 0px;
+    outline: none;
+    background: transparent;
   }
 `;
 
@@ -63,10 +151,10 @@ const TextSection = styled.div`
     line-height: 1.3;
     margin: 0;
 
-    color: #F5F5F5;
+    color: #f5f5f5;
   }
   h3 {
-    color: #FFC055;
+    color: #ffc055;
   }
 
   p {
@@ -78,7 +166,7 @@ const TextSection = styled.div`
     /* letter-spacing: 0.1px; */
     line-height: 1.6;
     /* letter-spacing: 0.8px; */
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   @media (max-width: 1490px) {
@@ -94,7 +182,9 @@ const TextSection = styled.div`
       font-size: 1.7em;
     }
   }
-
+  .hidable-forPC {
+    display: none;
+  }
   @media (max-width: 887px) {
     font-size: 12px;
     text-align: center;
@@ -102,13 +192,15 @@ const TextSection = styled.div`
     p {
       font-size: 1.7em;
       line-height: 1.4;
-
-      .hidable {
-        display: none;
-      }
+    }
+    .hidable {
+      display: none;
     }
     .hidable-h3 {
       display: none;
+    }
+    .hidable-forPC {
+      display: block;
     }
   }
 

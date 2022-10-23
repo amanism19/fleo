@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Root,
   StyledNavLink,
@@ -16,7 +16,6 @@ import logo from "../images/logo.svg";
 import menuSvg from "../images/menu.svg";
 import useMediaQuery from "../hooks/useMediaQuery";
 import ClassNames from "classnames";
-
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
