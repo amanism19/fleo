@@ -3,10 +3,12 @@ import React from "react";
 import { IntegrationSection } from "../../config.data";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import img from "../../images/integration.svg";
+import aniS3 from "../../images/ani-s3.gif";
 import imgMobile from "../../images/integrationMobile.svg";
 
 function Section5() {
   const isMinWidth780 = useMediaQuery("(min-width: 780px)");
+
   return (
     <Root>
       <TextSection>
@@ -15,10 +17,21 @@ function Section5() {
         </Title>
         <Description>{IntegrationSection.description}</Description>
       </TextSection>
-      {isMinWidth780 ? <Image src={img} /> : <Image src={imgMobile} />}
+      <Image src={aniS3} />
+
+      {/* {isMinWidth780 ? <Image src={img} /> : <Image src={imgMobile} />} */}
     </Root>
   );
 }
+
+const Video = styled.video`
+  width: 103%;
+  height: auto;
+  flex: 1;
+  background: #523a23;
+  background-color: transparent !important;
+  /* clip-path: inset(1px 1px); */
+`;
 
 const Root = styled.div`
   display: grid;
