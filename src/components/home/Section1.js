@@ -23,7 +23,7 @@ function Section1() {
           <Image alt="" src={image} />
         </Main>
       </Root>
-      <PartnersMain>
+      {/* <PartnersMain>
         <main>
           {BrandsSection.map((logo) => (
             <img alt="" src={logo} className="client_logo" />
@@ -32,7 +32,7 @@ function Section1() {
             <img alt="" src={logo} className="client_logo" />
           ))}
         </main>
-      </PartnersMain>
+      </PartnersMain> */}
       <StyledButtonLink className="forMobile" to="/demo">
         Request Demo
       </StyledButtonLink>
