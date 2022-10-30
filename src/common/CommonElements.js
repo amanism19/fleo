@@ -23,6 +23,10 @@ export const Button = styled.button`
     font-size: 18px;
     font-weight: 500;
   }
+  @media (max-width: 400px) {
+    font-size: 14px;
+    font-weight: 500;
+  }
 `;
 
 export const IconBG = styled.div`
