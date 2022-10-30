@@ -20,6 +20,7 @@ function FeatureBox({ item }) {
 const Root = styled.div`
   position: sticky;
   top: 90px;
+  width: 90vw;
 `;
 
 const RootInner = styled.div`
@@ -43,7 +44,10 @@ const RootInner = styled.div`
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    margin: 20px;
+  
+  }
+  @media (max-width: 480px) {
+    margin: 0px;
   }
 `;
 

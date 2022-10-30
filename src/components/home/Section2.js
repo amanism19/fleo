@@ -135,6 +135,9 @@ const Image = styled.img`
     padding-block: 50px;
     width: 80%;
   }
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 const TextSection = styled.div`
@@ -217,6 +220,11 @@ const TextSection = styled.div`
   @media (max-width: 400px) {
     p {
       width: 88%;
+    }
+  }
+  @media (max-width: 400px) {
+    p {
+      width: 100%;
     }
   }
 `;

@@ -10,6 +10,9 @@ import {
   NavTabMenu,
   StyledLink,
   MenuButton,
+  InfoSecBoldText,
+  InfoSecBox,
+  InfoSecRegularText,
 } from "./NavBarElements";
 
 import logo from "../images/logo.svg";
@@ -27,7 +30,7 @@ function Header() {
         <NavMain>
           <NavMenu>
             <Logo src={logo} alt="" />
-            {isMinWidth723 && (
+            {/* {isMinWidth723 && (
               <>
                 <StyledNavLink to="/" activeStyle>
                   Home
@@ -42,22 +45,21 @@ function Header() {
                   Pricing
                 </StyledNavLink>
               </>
-            )}
+            )} */}
           </NavMenu>
           <NavBtn>
             <StyledLink to="/sign-up">Sign In</StyledLink>
-            {isMinWidth723 ? (
-              <NavBtnLink to="/demo">Request Demo</NavBtnLink>
-            ) : (
+            {isMinWidth723 && <NavBtnLink to="/demo">Request Demo</NavBtnLink>}
+            {/* ) : (
               <MenuButton onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 <img src={menuSvg} alt="" />
               </MenuButton>
-            )}
+            )} */}
           </NavBtn>
         </NavMain>
       </Root>
       <NavTabMenu className={ClassNames({ isMenuOpen })}>
-        {!isMinWidth723 && (
+        {/* {!isMinWidth723 && (
           <>
             <StyledNavLink to="/" activeStyle>
               Home
@@ -72,7 +74,7 @@ function Header() {
               Pricing
             </StyledNavLink>
           </>
-        )}
+        )} */}
       </NavTabMenu>
     </>
   );

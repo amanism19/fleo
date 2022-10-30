@@ -50,6 +50,9 @@ const Main = styled.div`
   @media (max-width: 723px) {
     margin-top: 180px;
   }
+  @media (max-width: 430px) {
+    margin-top: 110px;
+  }
 `;
 
 const Container = styled.div`

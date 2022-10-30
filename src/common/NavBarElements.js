@@ -27,10 +27,12 @@ export const Root = styled.nav`
 export const Logo = styled.img`
   display: flex;
   align-items: center;
-  margin-right: 50px;
+  /* margin-right: 50px; */
   @media (max-width: 765px) {
-    margin-right: 20px;
+    /* margin-right: 20px; */
   }
+  height: 25px;
+  margin-left: -30px;
 `;
 
 export const NavMain = styled.nav`
@@ -40,6 +42,7 @@ export const NavMain = styled.nav`
   height: 70px;
   max-width: var(--max-box-width);
   flex: 1;
+  margin-right: 7px;
 `;
 
 export const StyledLink = styled(Link)`
@@ -149,3 +152,4 @@ export const NavBtnLink = styled(NavLink)`
     color: #fff;
   }
 `;
+

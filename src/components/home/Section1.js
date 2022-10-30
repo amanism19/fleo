@@ -23,16 +23,32 @@ function Section1() {
           <Image alt="" src={image} />
         </Main>
       </Root>
-      {/* <PartnersMain>
+      {/* <PartnersMain> */}
+      <InfoSec>
         <main>
-          {BrandsSection.map((logo) => (
+          {/* {BrandsSection.map((logo) => (
             <img alt="" src={logo} className="client_logo" />
           ))}
           {BrandsSection.map((logo) => (
             <img alt="" src={logo} className="client_logo" />
-          ))}
+          ))} */}
+          <InfoSecBox>
+            <InfoSecBoldText>2000+</InfoSecBoldText>
+            <InfoSecRegularText>Active Users</InfoSecRegularText>
+          </InfoSecBox>
+
+          <InfoSecBox>
+            <InfoSecBoldText>100+ hours</InfoSecBoldText>
+            <InfoSecRegularText>saved in business review</InfoSecRegularText>
+          </InfoSecBox>
+
+          <InfoSecBox>
+            <InfoSecBoldText>10,000+ </InfoSecBoldText>
+            <InfoSecRegularText>OKR being tracked</InfoSecRegularText>
+          </InfoSecBox>
         </main>
-      </PartnersMain> */}
+      </InfoSec>
+      {/* </PartnersMain> */}
       <StyledButtonLink className="forMobile" to="/demo">
         Request Demo
       </StyledButtonLink>
@@ -149,9 +165,13 @@ const Main = styled.div`
   gap: 40px;
   @media (max-width: 1116px) {
     margin-top: 10px;
+    
     text-align: center;
     flex-direction: column;
     gap: 90px;
+  }
+  @media (max-width: 430px) {
+    /* margin-top: -20px; */
   }
 `;
 
@@ -171,7 +191,14 @@ const Image = styled.img`
   }
 
   @media (max-width: 580px) {
-    margin-right: -50%;
+    /* margin-right: -50%; */
+    margin-left: -2%;
+    width: 130%;
+  }
+  @media (max-width: 430px) {
+    /* margin-right: -50%; */
+    margin-left: -27%;
+    width: 150%;
   }
 `;
 
@@ -273,5 +300,84 @@ const TextSection = styled.div`
   }
   @media (max-width: 400px) {
     font-size: 10.2px;
+  }
+`;
+
+export const InfoSec = styled.div`
+  display: flex;
+  flex-direction: column;
+  /* max-width: var(--max-box-width - 20px); */
+  padding-inline: var(--margin-inline-root);
+  padding-block: 14px;
+  overflow: hidden;
+  width: calc(100%);
+  justify-content: center;
+  align-items: center;
+  main {
+    max-width: var(--max-box-width);
+    width: calc(100%);
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    height: 90px;
+    justify-content: space-between;
+    display: flex;
+  }
+  @media (max-width: 722px) {
+    padding-inline: calc(var(--margin-inline-root) - 5px);
+  }
+`;
+
+export const InfoSecBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  @media (max-width: 722px) {
+    text-align: center;
+  }
+  @media (max-width: 400px) {
+    gap: 0px;
+  }
+`;
+
+export const InfoSecBoldText = styled.div`
+  /* font-family: "Mulish"; */
+  font-weight: 800;
+  font-size: 29px;
+  color: #56402a;
+  text-transform: uppercase;
+  @media (max-width: 980px) {
+    font-size: 23px;
+  }
+  @media (max-width: 680px) {
+    font-size: 21px;
+  }
+  @media (max-width: 488px) {
+    font-size: 19px;
+  }
+
+  @media (max-width: 387px) {
+    font-size: 19px;
+  }
+`;
+
+export const InfoSecRegularText = styled.div`
+  font-weight: 400;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #000000;
+
+  @media (max-width: 980px) {
+    font-size: 14px;
+  }
+  @media (max-width: 680px) {
+    font-size: 13px;
+  }
+  @media (max-width: 488px) {
+    font-size: 11px;
+  }
+
+  @media (max-width: 387px) {
+    font-size: 10px;
   }
 `;

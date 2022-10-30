@@ -30,6 +30,9 @@ const Root = styled.div`
   @media (max-width: 835px) {
     max-width: 90vw;
   }
+  /* @media (max-width: 452px) {
+    max-width: calc(100vw - 100px);
+  } */
 `;
 const Image = styled.img`
   border-left: 2px solid #e55a10;
@@ -51,6 +54,12 @@ const Quotes = styled.img`
   @media (max-width: 477px) {
     width: 40px;
     /* margin-right: 0px; */
+  }
+  @media (max-width: 364px) {
+    width: 30px;
+  }
+  @media (max-width: 325px) {
+    width: 29px;
   }
 `;
 
@@ -227,6 +236,51 @@ const TextSection = styled.div`
     .position {
       margin-top: 5px;
     }
+  }
+  @media (max-width: 420px) {
+    .name {
+      font-size: 17px;
+    }
+    .position {
+      margin-top: 0px;
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 382px) {
+    .title {
+      font-size: 18px;
+    }
+    .desc {
+      font-size: 12px;
+    }
+    .name {
+      font-size: 16px;
+    }
+    .position {
+      margin-top: -5px;
+      font-size: 11px;
+    }
+  }
+  @media (max-width: 364px) {
+    .name {
+      font-size: 15px;
+    }
+    .position {
+      margin-top: -7px;
+      font-size: 10px;
+    }
+  }
+  @media (max-width: 325px) {
+    .title {
+      font-size: 15px;
+    }
+    .desc {
+      font-size: 11px;
+    }
+    padding-top: 0px;
+    padding-left: 2px;
+    padding-bottom: 12px;
+    padding-right: 16px;
   }
 `;
 

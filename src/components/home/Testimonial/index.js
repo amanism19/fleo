@@ -169,6 +169,9 @@ const Body = styled.div`
   @media (max-width: 477px) {
     gap: 10px;
   }
+  @media (max-width: 452px) {
+    width: 100vw;
+  }
 `;
 
 const Main = styled.div`
@@ -178,17 +181,21 @@ const Main = styled.div`
   main {
     width: calc(100% - ${({ button_width }) => button_width}px);
     height: ${({ button_height }) => button_height}px;
+    margin-inline: 14px;
     @media (max-width: 835px) {
       width: 100%;
       height: 100%;
       max-width: 95vw;
+    }
+    @media (max-width: 452px) {
+      width: 100vw;
+      margin-inline: 0px;
     }
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-inline: 14px;
   }
   .display {
     position: absolute;
@@ -196,6 +203,10 @@ const Main = styled.div`
     height: 100%;
     @media (max-width: 835px) {
       max-width: 95vw;
+    }
+    @media (max-width: 452px) {
+      /* width: 100vw; */
+      max-width: 100vw;
     }
     right: 0;
     left: 0;
