@@ -62,7 +62,9 @@ const TestimonialSection = {
       position: "Senior HR Lead | PhableCare",
       title: "Improves Work Environment Quality",
       description:
-        "Fleo is the most responsive and flexible PMS currently. For over 800 employees & 100+ configurations, we implemented it all within 3 weeks.All I care about is creating the best working environment, & Fleo helps me do that.",
+        "Fleo is the most responsive and flexible PMS currently. For over 800 employees & 100+ configurations, we implemented it all within 3 weeks.",
+      descriptionHighlighted:
+        "All I care about is creating the best working environment, & Fleo helps me do that.",
     },
     {
       image: test2,
@@ -70,7 +72,9 @@ const TestimonialSection = {
       position: "CEO | Bizom",
       title: "Makes for Effective Leadership",
       description:
-        "Fleo got our rapidly expanding team in sync. My 90 min weekly review is down to 30 mins. I am well aware of every bit of progress and bottleneck. Thanks to Fleo, our Vision, Goals & Efforts are completely aligned.",
+        "Fleo got our rapidly expanding team in sync. My 90 min weekly review is down to 30 mins. I am aware of every bit of progress and bottleneck.",
+      descriptionHighlighted:
+        "Thanks to Fleo, our Vision, Goals & Efforts are completely aligned.",
     },
     {
       image: test3,
@@ -78,7 +82,8 @@ const TestimonialSection = {
       position: "Senior HR Lead | PhableCare",
       title: "Improves Work Environment Quality",
       description:
-        "Fleo is the most responsive and flexible PMS currently. For over 800 employees & 100+ configurations, we implemented it all within 3 weeks.All I care about is creating the best working environment, & Fleo helps me do that.",
+        "Fleo is the most responsive and flexible PMS currently. For over 800 employees & 100+ configurations, we implemented it all within 3 weeks.",
+      descriptionHighlighted: "All I care about is creating the best working environment, & Fleo helps me do that.",
     },
   ],
 };
@@ -135,19 +140,19 @@ const TrialSection = {
     {
       title: "Bussiness Reviews",
       description:
-        "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+        "Set review cycles, conduct  internal reviews, 360 degree and one on ones.",
       icon: icon1,
     },
     {
       title: "Task Managment",
       description:
-        "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+        "Create daily task list, Manage projects aligned with goals. See planned vs unplanned work",
       icon: icon2,
     },
     {
       title: "Initiatives",
       description:
-        "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+        "Design projects & initiatives in line with the objectives. This way you never lose track of what matters most.",
       icon: icon3,
     },
   ],
@@ -155,19 +160,19 @@ const TrialSection = {
     {
       title: "KPI",
       description:
-        "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+        "Track all your metrics on single dasboard. Combine KPIs to create one north metric.",
       icon: icon4,
     },
     {
-      title: "Activity Dashboard",
+      title: "Workload Dashboard",
       description:
-        "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+        "Eliminate imbalanced work distribution by checking team’s bandwidth report.",
       icon: icon5,
     },
     {
       title: "Goal Managment",
       description:
-        "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+        "Break your strategy into small goals (OKRs) and focus only on the right things.",
       icon: icon6,
     },
   ],

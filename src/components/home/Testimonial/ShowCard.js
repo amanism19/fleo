@@ -8,7 +8,8 @@ const ShowCard = ({ item, buttonHeight }) => {
       <Image src={item.image} />
       <TextSection>
         <span className="title">{item.title}</span>
-        <span className="desc">{item.description}</span>
+        <p className="desc">{item.description}</p>
+        <p className="desc bold">{item.descriptionHighlighted}</p>
         <div className="infoArea">
           <div className="infoAreaText">
             <span className="name">{item.name}</span>
@@ -40,17 +41,23 @@ const Image = styled.img`
   height: auto;
   object-fit: cover;
   border-radius: 0px 20px 20px 0px;
-  @media (max-width: 555px) {
+  @media (max-width: 565px) {
     width: 150px;
   }
   @media (max-width: 465px) {
-    width: 106px;
+    width: 126px;
   }
 `;
 
 const Quotes = styled.img`
   margin-top: auto;
   margin-right: 0px;
+  margin-bottom: 5px;
+  @media (max-width: 722px) {
+    width: 43px;
+    margin-top: -5px;
+    margin-right: -8px;
+  }
   @media (max-width: 477px) {
     width: 40px;
     /* margin-right: 0px; */
@@ -103,40 +110,41 @@ const TextSection = styled.div`
   background-position: top left, top center, top right, center right,
     bottom right, bottom center, bottom left, center left;
   background-repeat: no-repeat;
-  padding-top: 10px;
   padding-left: 10px;
-  padding-bottom: 30px;
   padding-right: 20px;
   display: flex;
   text-align: left;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 20px;
 
   .title {
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 700;
   }
   .desc {
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 15.5px;
     color: #000000;
-
-    letter-spacing: 0.7px;
+    line-height: 1.45;
+    letter-spacing: 0.1px;
+    margin: 0px;
+    margin-block: 7px;
+  }
+  .bold {
+    font-weight: 700;
   }
   .name {
     font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 26px;
     color: #000000;
     white-space: nowrap;
+    line-height: 1;
   }
   .position {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 15px;
     color: #000000;
-    margin-top: 10px;
+    margin-top: 4px;
     white-space: nowrap;
   }
   .infoArea {
@@ -148,46 +156,36 @@ const TextSection = styled.div`
     display: flex;
     flex-direction: column;
     margin-right: auto;
+    gap: 5px;
   }
 
-  @media (max-width: 578px) {
-    gap: 10px;
+  @media (max-width: 722px) {
     .title {
-      font-weight: 700;
-      font-size: 22px;
-      line-height: 1.3;
-      color: #000000;
+      font-size: 18px;
     }
     .desc {
-      font-weight: 400;
-      font-size: 17px;
-      color: #000000;
+      font-size: 14px;
+      line-height: 1.4;
+      margin-block: 2px;
     }
     .name {
-      font-weight: 700;
-      font-size: 28px;
-      color: #000000;
-    }
-    .position {
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 13px;
-      color: #000000;
-    }
-  }
-  @media (max-width: 565px) {
-    gap: 5px;
-    .title {
-      font-size: 21px;
-    }
-    .desc {
-      font-size: 16px;
-    }
-    .name {
-      font-size: 25px;
+      font-size: 18.5px;
     }
     .position {
       font-size: 14px;
+    }
+  }
+
+  @media (max-width: 565px) {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    .name {
+      font-size: 21px;
+    }
+    .position {
+      font-size: 13px;
     }
   }
 
@@ -207,7 +205,6 @@ const TextSection = styled.div`
     }
   }
   @media (max-width: 477px) {
-    gap: 5px;
     .title {
       font-size: 19px;
     }

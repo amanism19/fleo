@@ -17,34 +17,34 @@ const BookTrailSection = () => {
       <Title>{TrialSection.title}</Title>
       <EmailForm />
       <Main>
-        <BookTrailList>
-          {TrialSection.list1.map((i, index) => (
-            <BookTrailCard
-              icon={i.icon}
-              title={i.title}
-              description={i.description}
-            />
-          ))}
-        </BookTrailList>
+        {/* <BookTrailList> */}
+        {TrialSection.list1.map((i, index) => (
+          <BookTrailCard
+            icon={i.icon}
+            title={i.title}
+            description={i.description}
+          />
+        ))}
+        {/* </BookTrailList> */}
 
-        <ImageContainer className="big">
+        {/* <ImageContainer className="big">
           <Image alt="" src={okrsList} className="big" />
-        </ImageContainer>
+        </ImageContainer> */}
 
-        <BookTrailList>
-          {TrialSection.list2.map((i, index) => (
-            <BookTrailCard
-              icon={i.icon}
-              title={i.title}
-              description={i.description}
-            />
-          ))}
-        </BookTrailList>
+        {/* <BookTrailList> */}
+        {TrialSection.list2.map((i, index) => (
+          <BookTrailCard
+            icon={i.icon}
+            title={i.title}
+            description={i.description}
+          />
+        ))}
+        {/* </BookTrailList> */}
       </Main>
 
-      <ImageContainer className="small">
+      {/* <ImageContainer className="small">
         <Image alt="" src={okrsList} className="small" />
-      </ImageContainer>
+      </ImageContainer> */}
     </Root>
   );
 };
@@ -77,25 +77,19 @@ const Title = styled.div`
 const Main = styled.div`
   flex: 1;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 20px;
-  grid-template-areas: ". . .";
-  justify-content: space-evenly;
-  align-content: space-between;
-  justify-items: center;
-  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   margin-top: 60px;
-  @media (max-width: 1030px) {
+  gap: 15px;
+  @media (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
-    max-width: 90vw;
-    gap: 10px;
-    grid-template-areas: ". .";
+    grid-template-rows: 1fr 1fr 1fr;
   }
-  @media (max-width: 476px) {
+
+  @media (max-width: 450px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "." ".";
+    grid-template-rows: 1fr;
+    gap: 35px;
   }
 `;
 
@@ -135,7 +129,7 @@ const Image = styled.img`
 
 const BookTrailList = styled.div`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 50px;
   @media (max-width: 476px) {
     margin-bottom: 50px;
@@ -143,39 +137,3 @@ const BookTrailList = styled.div`
 `;
 
 export default BookTrailSection;
-
-const list1 = [
-  {
-    title: "Bussiness Reviews",
-    description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-    icon: icon1,
-  },
-  {
-    title: "Task Managment",
-    description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-    icon: icon2,
-  },
-  {
-    title: "Initiatives",
-    description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-    icon: icon3,
-  },
-];
-
-const list2 = [
-  {
-    title: "KPI",
-    description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-    icon: icon4,
-  },
-  {
-    title: "Activity Dashboard",
-    description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-    icon: icon5,
-  },
-  {
-    title: "Goal Managment",
-    description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
-    icon: icon6,
-  },
-];
