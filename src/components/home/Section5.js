@@ -17,7 +17,9 @@ function Section5() {
         </Title>
         <Description>{IntegrationSection.description}</Description>
       </TextSection>
-      <Image src={aniS3} />
+      <ImageContainer>
+        <Image src={aniS3} />
+      </ImageContainer>
 
       {/* {isMinWidth780 ? <Image src={img} /> : <Image src={imgMobile} />} */}
     </Root>
@@ -46,17 +48,30 @@ const Root = styled.div`
   justify-items: center;
   align-items: stretch;
   width: 100%;
-  background: #fff;
+  background: #fcfcfd;
   padding-block: 20px;
   padding-bottom: 60px;
+  overflow: hidden;
+`;
+
+const ImageContainer = styled.div`
+  height: calc(40vw);
+  @media (min-width: 893px) {
+    margin-bottom: -13%;
+  }
+  @media (max-width: 893px) {
+    height: 50vw;
+  }
 `;
 
 const Image = styled.img`
   max-width: var(--max-box-width);
-  width: 80vw;
+  width: 47vw;
+  margin-top: -7%;
   @media (max-width: 893px) {
-    width: 80vw;
+    width: 90vw;
   }
+  max-width: 650px;
 `;
 
 const TextSection = styled.div`

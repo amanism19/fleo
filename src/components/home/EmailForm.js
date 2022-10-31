@@ -52,6 +52,7 @@ const Root = styled.div`
   width: 100%;
   justify-content: center;
   margin-top: 40px;
+
 `;
 
 const LoadingMessage = styled.div`
