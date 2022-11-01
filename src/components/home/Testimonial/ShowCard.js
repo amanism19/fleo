@@ -120,6 +120,7 @@ const TextSection = styled.div`
   .title {
     font-size: 21px;
     font-weight: 700;
+    color: #56402A;
   }
   .desc {
     font-weight: 500;
@@ -136,13 +137,13 @@ const TextSection = styled.div`
   .name {
     font-weight: 700;
     font-size: 26px;
-    color: #000000;
+    color: #DF581E;
     white-space: nowrap;
     line-height: 1;
   }
   .position {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
     color: #000000;
     margin-top: 4px;
     white-space: nowrap;
@@ -156,7 +157,7 @@ const TextSection = styled.div`
     display: flex;
     flex-direction: column;
     margin-right: auto;
-    gap: 5px;
+    gap: 1px;
   }
 
   @media (max-width: 722px) {

@@ -1,9 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import styled from "@emotion/styled";
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import test1 from "../../../images/test-1.jpg";
-import test2 from "../../../images/test-2.jpg";
-import test3 from "../../../images/test-3.jpg";
 import BackCardButton from "./BackCardButton";
 import NextCardButton from "./NextCardButton";
 import ShowCard from "./ShowCard";
@@ -287,30 +284,3 @@ export const ShowBar = styled(motion.div)`
 `;
 
 export default Testimonial;
-
-const list = [
-  {
-    image: test1,
-    name: "Harriet Mitchell",
-    position: "Marketing Director",
-    title: "Make effective leadership",
-    description:
-      "Lorem ipsum dolor sit amet, consctetur adipiscing elit. Lorem ipsum dolor sit. Lorem ipsum dolLorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consctetur adipiscing elit. Lorem",
-  },
-  {
-    image: test2,
-    name: "Jhon Fleo",
-    position: "Managing Director",
-    title: "Make effective leadership",
-    description:
-      "Fleo  shows you the areas that need your attention, it will be your go- to tool for internal business reviews. it will be your go- to tool for internal business reviews",
-  },
-  {
-    image: test3,
-    name: "Fleo Harriet",
-    position: "Product Analyst",
-    title: "Take faster and impactful decision using Fleo",
-    description:
-      "Fleo  shows you the areas that need your attention, it will be your go- to tool for internal business reviews.",
-  },
-];

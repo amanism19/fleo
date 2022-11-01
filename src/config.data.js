@@ -18,10 +18,18 @@ import icon5 from "./images/Vector-4.svg";
 import icon6 from "./images/Vector-5.svg";
 
 const Landing = {
-  title1: "Create high performance",
-  title2: "culture with OKRs",
-  description:
-    "Use Fleo to make goals effective and gets teams focused on company growth",
+  mobile: {
+    title1: "Create high performance",
+    title2: "culture with OKRs",
+    description:
+      "Use Fleo to make goals effective and gets teams focused on company growth",
+  },
+  desktop: {
+    title1: "Create High Performance",
+    title2: "Culture for Distributed teams",
+    description:
+      "Use Fleo to manage OKRs, KRAs or KPIs, and enable high performance with continuous feedback.",
+  },
 };
 
 const BrandsSection = [logo1, logo2, logo3, logo4, logo5];
@@ -54,7 +62,7 @@ const PlanningSection = {
 };
 
 const TestimonialSection = {
-  title: "Client Testimonial",
+  title: "Our Customers Love us",
   list: [
     {
       image: test1,
@@ -83,7 +91,8 @@ const TestimonialSection = {
       title: "Improves Work Environment Quality",
       description:
         "Fleo is the most responsive and flexible PMS currently. For over 800 employees & 100+ configurations, we implemented it all within 3 weeks.",
-      descriptionHighlighted: "All I care about is creating the best working environment, & Fleo helps me do that.",
+      descriptionHighlighted:
+        "All I care about is creating the best working environment, & Fleo helps me do that.",
     },
   ],
 };
@@ -129,13 +138,12 @@ const InformationSection = {
 };
 
 const IntegrationSection = {
-  title: "Integration",
-  description:
-    "Fleo captures everyone’s involvement and helps with uniform distribution of work.",
+  title: "Fleo sits in your product ecosystem",
+  description: "Link different data sources with seamless integration",
 };
 
 const TrialSection = {
-  title: "Book 30 day FREE trial",
+  title: "Book Your Demo Now",
   list1: [
     {
       title: "Bussiness Reviews",

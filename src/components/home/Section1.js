@@ -3,22 +3,27 @@ import React from "react";
 import image from "../../images/ill2.png";
 import styled from "@emotion/styled";
 import { NavBtnLink } from "../../common/NavBarElements";
-import { BrandsSection, Landing } from "../../config.data";
+import { Landing } from "../../config.data";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 function Section1() {
+  const isMobile = useMediaQuery("(max-width: 1116px)");
+
+  const mode = isMobile ? "mobile" : "desktop";
+
   return (
     <>
       <Root>
         <Main>
           <TextSection>
-            <h2>{Landing.title1}</h2>
-            <h2>{Landing.title2}</h2>
+            <h2>{Landing[mode].title1}</h2>
+            <h2>{Landing[mode].title2}</h2>
 
             <strong>
-              {Landing.description}
+              {Landing[mode].description}
               <span className="showBar" />
             </strong>
-            <StyledButtonLink to="/demo">Request Demo</StyledButtonLink>
+            <StyledButtonLink to="/demo">Show Demo</StyledButtonLink>
           </TextSection>
           <Image alt="" src={image} />
         </Main>
@@ -30,7 +35,7 @@ function Section1() {
             <img alt="" src={logo} className="client_logo" />
           ))}
           {BrandsSection.map((logo) => (
-            <img alt="" src={logo} className="client_logo" />
+            <img  alt="" src={logo} className="client_logo" />
           ))} */}
           <InfoSecBox>
             <InfoSecBoldText>2000+</InfoSecBoldText>
@@ -65,6 +70,7 @@ const Root = styled.div`
   padding-inline: var(--margin-inline-root);
   overflow: hidden;
   width: calc(100%);
+  padding-bottom: 15px;
 `;
 
 const StyledButtonLink = styled(NavBtnLink)`
@@ -165,7 +171,7 @@ const Main = styled.div`
   gap: 40px;
   @media (max-width: 1116px) {
     margin-top: 10px;
-    
+
     text-align: center;
     flex-direction: column;
     gap: 90px;
@@ -234,8 +240,8 @@ const TextSection = styled.div`
     margin-top: 20px;
     .showBar {
       display: block;
-      width: 6px;
-      background: #395fe2;
+      width: 7px;
+      background: #e07c1f;
       margin-right: 25px;
     }
     @media (max-width: 1116px) {
@@ -244,7 +250,7 @@ const TextSection = styled.div`
       .showBar {
         width: 90px;
         height: 5px;
-        background: #395fe2;
+        background: #e07c1f;
         margin: 0px;
         margin-top: 15px;
       }
@@ -308,18 +314,22 @@ export const InfoSec = styled.div`
   flex-direction: column;
   /* max-width: var(--max-box-width - 20px); */
   padding-inline: var(--margin-inline-root);
-  padding-block: 14px;
+  /* padding-block: 4px; */
   overflow: hidden;
   width: calc(100%);
   justify-content: center;
   align-items: center;
+  background: rgba(255, 255, 255, 0.69);
+  mix-blend-mode: normal;
+  box-shadow: inset 1px 1px 13px rgba(0, 0, 0, 0.08);
+  z-index: 100;
   main {
     max-width: var(--max-box-width);
     width: calc(100%);
     align-items: center;
     display: flex;
     gap: 10px;
-    height: 90px;
+    height: 84px;
     justify-content: space-between;
     display: flex;
   }
@@ -332,8 +342,8 @@ export const InfoSecBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3px;
+  text-align: center;
   @media (max-width: 722px) {
-    text-align: center;
   }
   @media (max-width: 400px) {
     gap: 0px;

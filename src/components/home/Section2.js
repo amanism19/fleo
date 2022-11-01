@@ -51,16 +51,16 @@ function Section2() {
           <h2 className="hidable-h3-">{PlanningSection.title1}</h2>
           {/* <h2>{PlanningSection.title2}</h2> */}
 
-          {PlanningSection.mobileTextList.map(({ title }) => (
-            <p className="hidable-forPC">
+          {PlanningSection.mobileTextList.map(({ title }, index) => (
+            <div className="para hidable-forPC" key={index}>
               <h3>{title} </h3>
-            </p>
+            </div>
           ))}
-          {PlanningSection.pcTextList.map(({ title, description }) => (
-            <p className="hidable">
+          {PlanningSection.pcTextList.map(({ title, description }, index) => (
+            <div className="para hidable" key={index}>
               <h3>{title} </h3>
               <span>{description}</span>
-            </p>
+            </div>
           ))}
         </TextSection>
       </Main>
@@ -79,6 +79,9 @@ const Root = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
+  @media (min-width: 1116px) {
+    box-shadow: inset 0px 5px 12px rgb(255 255 255 / 50%);
+  }
 `;
 
 const Main = styled.div`
@@ -160,7 +163,7 @@ const TextSection = styled.div`
     color: #ffc055;
   }
 
-  p {
+  .para {
     margin: 0;
     margin-top: 10px;
 
@@ -181,7 +184,7 @@ const TextSection = styled.div`
   }
 
   @media (max-width: 1000px) {
-    p {
+    .para {
       font-size: 1.7em;
     }
   }
@@ -192,7 +195,7 @@ const TextSection = styled.div`
     font-size: 12px;
     text-align: center;
     align-items: center;
-    p {
+    .para {
       font-size: 1.7em;
       line-height: 1.4;
     }
@@ -218,12 +221,12 @@ const TextSection = styled.div`
   }
 
   @media (max-width: 400px) {
-    p {
+    .para {
       width: 88%;
     }
   }
   @media (max-width: 400px) {
-    p {
+    .para {
       width: 100%;
     }
   }

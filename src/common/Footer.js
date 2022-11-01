@@ -93,7 +93,7 @@ const Root = styled.div`
     flex-direction: column;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 20px 40px;
     a {
       text-decoration: none;
       color: #fff;

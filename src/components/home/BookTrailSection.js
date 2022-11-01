@@ -20,6 +20,7 @@ const BookTrailSection = () => {
         {/* <BookTrailList> */}
         {TrialSection.list1.map((i, index) => (
           <BookTrailCard
+            key={index}
             icon={i.icon}
             title={i.title}
             description={i.description}
@@ -34,6 +35,7 @@ const BookTrailSection = () => {
         {/* <BookTrailList> */}
         {TrialSection.list2.map((i, index) => (
           <BookTrailCard
+            key={index}
             icon={i.icon}
             title={i.title}
             description={i.description}

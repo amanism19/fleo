@@ -15,7 +15,7 @@ function Section4() {
         <div className="brownBox" />
         <main>
           {InformationSection.list.map((i, index) => {
-            return <FeatureBox key={index} item={i} />;
+            return <FeatureBox key={index} item={i}  />;
           })}
         </main>
       </Main>
