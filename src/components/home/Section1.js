@@ -168,7 +168,7 @@ const Main = styled.div`
   /* height: calc(100vh - 80px); */
   margin-top: 80px;
   align-items: center;
-  gap: 40px;
+  gap: 10px;
   @media (max-width: 1116px) {
     margin-top: 10px;
 
@@ -182,15 +182,21 @@ const Main = styled.div`
 `;
 
 const Image = styled.img`
-  flex: 0.5;
+  flex: 0.6;
   height: auto;
-  width: 88%;
+  width: 51.5vw;
   object-fit: contain;
+  margin-right: -8vw;
+  @media (max-width: 1710px) {
+    
+    margin-right: -3vw;
+  }
   @media (max-width: 1116px) {
-    flex: 0.5;
-    margin-top: -16rem;
-    /* margin-right: calc(var(--margin-inline-root) * -1 + -150px); */
+    width: 75vw;
+    flex: 1;
     margin-right: -30%;
+    margin-top: -18.5rem;
+    /* margin-right: calc(var(--margin-inline-root) * -1 + -150px); */
   }
   @media (max-width: 723px) {
     margin-top: 0px;
@@ -209,16 +215,17 @@ const Image = styled.img`
 `;
 
 const TextSection = styled.div`
+  flex: 0.4;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   /* justify-content: center; */
   min-height: 30rem;
-  font-size: 16px;
+  font-size: calc(16 * 0.057vw);
   margin-right: 50px;
   h2 {
     font-weight: 800;
-    font-size: 3.125em;
+    font-size: 2.7em;
     color: #56402a;
     white-space: nowrap;
     line-height: 1.6;
@@ -234,7 +241,7 @@ const TextSection = styled.div`
     flex-direction: row-reverse;
 
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 1.7;
     color: #000000;
     margin-top: 20px;
@@ -322,7 +329,6 @@ export const InfoSec = styled.div`
   background: rgba(255, 255, 255, 0.69);
   mix-blend-mode: normal;
   box-shadow: inset 1px 1px 13px rgba(0, 0, 0, 0.08);
-  z-index: 100;
   main {
     max-width: var(--max-box-width);
     width: calc(100%);

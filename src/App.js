@@ -33,7 +33,7 @@ const Root = styled.div`
   flex-direction: column;
   /* overflow: hidden; */
   --margin-inline-root: 3rem;
-  --max-box-width: 80rem;
+  --max-box-width: 100rem;
   @media (max-width: 723px) {
     --margin-inline-root: 1.3rem;
   }
