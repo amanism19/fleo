@@ -61,6 +61,8 @@ const Quotes = styled.img`
   @media (max-width: 477px) {
     width: 40px;
     /* margin-right: 0px; */
+    margin-top: -0px;
+    margin-right: -5.5px;
   }
   @media (max-width: 364px) {
     width: 30px;
@@ -120,7 +122,7 @@ const TextSection = styled.div`
   .title {
     font-size: 21px;
     font-weight: 700;
-    color: #56402A;
+    color: #56402a;
   }
   .desc {
     font-weight: 500;
@@ -137,7 +139,7 @@ const TextSection = styled.div`
   .name {
     font-weight: 700;
     font-size: 26px;
-    color: #DF581E;
+    color: #df581e;
     white-space: nowrap;
     line-height: 1;
   }
@@ -255,8 +257,10 @@ const TextSection = styled.div`
       font-size: 16px;
     }
     .position {
-      margin-top: -5px;
       font-size: 11px;
+    }
+    .infoAreaText {
+      gap: 5px;
     }
   }
   @media (max-width: 364px) {

@@ -3,7 +3,7 @@ import React from "react";
 
 function FeatureBox({ item }) {
   return (
-    <Root style={{ top: 150 + item.top, transform: `scale(${item.scale})` }}>
+    <Root style={{ top: 75 + item.top, transform: `scale(${item.scale})` }}>
       <RootInner>
         <Image alt="image" src={item.image} />
         <TextSection>

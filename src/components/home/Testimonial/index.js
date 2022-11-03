@@ -220,11 +220,12 @@ const Title = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 16px;
+  text-align: center;
   h4 {
     font-weight: 800;
     font-size: 3.125em;
     color: #56402a;
-    white-space: nowrap;
+
     line-height: 1.6;
     margin: 0;
   }

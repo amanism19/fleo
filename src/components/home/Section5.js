@@ -89,7 +89,6 @@ const Title = styled.div`
     font-weight: 800;
     font-size: 3.125em;
     color: #56402a;
-    white-space: nowrap;
     line-height: 1.6;
     margin: 0;
   }
