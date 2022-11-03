@@ -188,7 +188,6 @@ const Image = styled.img`
   object-fit: contain;
   margin-right: -8vw;
   @media (max-width: 1710px) {
-    
     margin-right: -3vw;
   }
   @media (max-width: 1116px) {
@@ -221,7 +220,8 @@ const TextSection = styled.div`
   align-items: flex-start;
   /* justify-content: center; */
   min-height: 30rem;
-  font-size: calc(16 * 0.057vw);
+  /* font-size: calc(16 * 0.057vw); */
+  font-size: 1vw;
   margin-right: 50px;
   h2 {
     font-weight: 800;
@@ -267,10 +267,14 @@ const TextSection = styled.div`
   @media (max-width: 1116px) {
     margin-right: 0px;
     max-width: 30rem;
+    font-size: 14px;
   }
 
+  @media (min-width: 1900px) {
+    font-size: 17px;
+  }
   @media (max-width: 1490px) {
-    font-size: 14px;
+    /* font-size: 14px; */
   }
 
   @media (max-width: 723px) {
