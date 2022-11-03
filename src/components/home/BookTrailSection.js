@@ -1,11 +1,11 @@
 import React from "react";
-import icon1 from "../../images/Vector.svg";
-import icon2 from "../../images/Vector-1.svg";
-import icon3 from "../../images/Vector-2.svg";
-import icon4 from "../../images/Vector-3.svg";
-import icon5 from "../../images/Vector-4.svg";
-import icon6 from "../../images/Vector-5.svg";
-import okrsList from "../../images/okrs_list.png";
+// import icon1 from "../../images/Vector.svg";
+// import icon2 from "../../images/Vector-1.svg";
+// import icon3 from "../../images/Vector-2.svg";
+// import icon4 from "../../images/Vector-3.svg";
+// import icon5 from "../../images/Vector-4.svg";
+// import icon6 from "../../images/Vector-5.svg";
+// import okrsList from "../../images/okrs_list.png";
 import BookTrailCard from "./BookTrailCard";
 import EmailForm from "./EmailForm";
 import styled from "@emotion/styled";
@@ -95,47 +95,47 @@ const Main = styled.div`
   }
 `;
 
-const ImageContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  &.small {
-    display: none;
-    margin-top: 80px;
-  }
-  @media (max-width: 1030px) {
-    &.big {
-      display: none;
-    }
-    &.small {
-      display: flex;
-    }
-  }
-`;
+// const ImageContainer = styled.div`
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 100%;
+//   &.small {
+//     display: none;
+//     margin-top: 80px;
+//   }
+//   @media (max-width: 1030px) {
+//     &.big {
+//       display: none;
+//     }
+//     &.small {
+//       display: flex;
+//     }
+//   }
+// `;
 
-const Image = styled.img`
-  align-self: center;
-  width: 90%;
-  height: auto;
-  margin-left: -5px;
-  &.small {
-    margin-left: -10px;
-    width: 100%;
-    max-width: 90vw;
-  }
-  @media (max-width: 476px) {
-    margin-top: -50px;
-  }
-`;
+// const Image = styled.img`
+//   align-self: center;
+//   width: 90%;
+//   height: auto;
+//   margin-left: -5px;
+//   &.small {
+//     margin-left: -10px;
+//     width: 100%;
+//     max-width: 90vw;
+//   }
+//   @media (max-width: 476px) {
+//     margin-top: -50px;
+//   }
+// `;
 
-const BookTrailList = styled.div`
-  display: flex;
-  /* flex-direction: column; */
-  gap: 50px;
-  @media (max-width: 476px) {
-    margin-bottom: 50px;
-  }
-`;
+// const BookTrailList = styled.div`
+//   display: flex;
+//   /* flex-direction: column; */
+//   gap: 50px;
+//   @media (max-width: 476px) {
+//     margin-bottom: 50px;
+//   }
+// `;
 
 export default BookTrailSection;

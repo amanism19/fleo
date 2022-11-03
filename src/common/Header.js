@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   Root,
-  StyledNavLink,
   NavMain,
   NavMenu,
   NavBtn,
@@ -9,19 +8,14 @@ import {
   Logo,
   NavTabMenu,
   StyledLink,
-  MenuButton,
-  InfoSecBoldText,
-  InfoSecBox,
-  InfoSecRegularText,
 } from "./NavBarElements";
 
 import logo from "../images/logo.svg";
-import menuSvg from "../images/menu.svg";
 import useMediaQuery from "../hooks/useMediaQuery";
 import ClassNames from "classnames";
 
 function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen] = useState(false);
   const isMinWidth723 = useMediaQuery("(min-width: 844px)");
 
   return (

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import styled from "@emotion/styled";
 // import image from "../../images/section_2_ilstr.png";
 import image from "../../images/Animation-5 (1500 × 1500px).gif";
@@ -12,7 +12,7 @@ import { PlanningSection } from "../../config.data";
 // } from "react-intersection-observer-hook";
 
 function Section2() {
-  const videoElement = useRef(null);
+  // const videoElement = useRef(null);
   // const { playerState, handleOnTimeUpdate } = useVideoPlayer(videoElement);
   // const [ref, { entry }] = useIntersectionObserver();
   // const isVisible = entry && entry.isIntersecting;
@@ -101,32 +101,32 @@ const Main = styled.div`
   }
 `;
 
-const Video = styled.video`
-  width: 103%;
-  height: auto;
-  flex: 1;
-  background: #523a23;
-  background-color: transparent !important;
-  clip-path: inset(1px 1px);
-`;
+// const Video = styled.video`
+//   width: 103%;
+//   height: auto;
+//   flex: 1;
+//   background: #523a23;
+//   background-color: transparent !important;
+//   clip-path: inset(1px 1px);
+// `;
 
-const VideoContainer = styled.div`
-  display: flex;
-  /* flex: 0.5; */
-  height: auto;
-  /* overflow: hidden; */
-  width: 50%;
-  @media (max-width: 887px) {
-    flex-direction: column-reverse;
-    padding-block: 50px;
-    width: 80%;
-  }
-  && {
-    border: 0px;
-    outline: none;
-    background: transparent;
-  }
-`;
+// const VideoContainer = styled.div`
+//   display: flex;
+//   /* flex: 0.5; */
+//   height: auto;
+//   /* overflow: hidden; */
+//   width: 50%;
+//   @media (max-width: 887px) {
+//     flex-direction: column-reverse;
+//     padding-block: 50px;
+//     width: 80%;
+//   }
+//   && {
+//     border: 0px;
+//     outline: none;
+//     background: transparent;
+//   }
+// `;
 
 const Image = styled.img`
   flex: 0.5;

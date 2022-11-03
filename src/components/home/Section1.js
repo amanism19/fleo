@@ -92,72 +92,72 @@ const StyledButtonLink = styled(NavBtnLink)`
   }
 `;
 
-const PartnersMain = styled.div`
-  background-color: #ffffff;
-  gap: 10px;
-  height: 100px;
-  width: calc(100vw - 20px);
-  overflow: hidden;
-  align-items: center;
-  display: flex;
-  main {
-    align-items: center;
-    display: flex;
-    gap: 10px;
-    height: 90px;
-    justify-content: space-evenly;
-    display: inline-flex;
-    animation: scrolling-left1 20s linear infinite;
-  }
+// const PartnersMain = styled.div`
+//   background-color: #ffffff;
+//   gap: 10px;
+//   height: 100px;
+//   width: calc(100vw - 20px);
+//   overflow: hidden;
+//   align-items: center;
+//   display: flex;
+//   main {
+//     align-items: center;
+//     display: flex;
+//     gap: 10px;
+//     height: 90px;
+//     justify-content: space-evenly;
+//     display: inline-flex;
+//     animation: scrolling-left1 20s linear infinite;
+//   }
 
-  @keyframes scrolling-left1 {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
+//   @keyframes scrolling-left1 {
+//     0% {
+//       transform: translateX(100%);
+//     }
+//     100% {
+//       transform: translateX(-100%);
+//     }
+//   }
 
-  .client_logo {
-    height: 40px;
-    width: auto;
-    object-fit: contain;
-    margin-right: 40px;
-  }
-  @media (max-width: 900px) {
-    justify-content: space-evenly;
-    .client_logo {
-      height: 30px;
-      gap: 0px;
-    }
-  }
-  @media (max-width: 777px) {
-    justify-content: space-evenly;
-    .client_logo {
-      height: 25px;
-      gap: 0px;
-    }
-    height: 75px;
-  }
-  @media (max-width: 595px) {
-    justify-content: space-evenly;
-    .client_logo {
-      height: 23px;
-      gap: 0px;
-    }
-    .hidable {
-      display: none;
-    }
-  }
+//   .client_logo {
+//     height: 40px;
+//     width: auto;
+//     object-fit: contain;
+//     margin-right: 40px;
+//   }
+//   @media (max-width: 900px) {
+//     justify-content: space-evenly;
+//     .client_logo {
+//       height: 30px;
+//       gap: 0px;
+//     }
+//   }
+//   @media (max-width: 777px) {
+//     justify-content: space-evenly;
+//     .client_logo {
+//       height: 25px;
+//       gap: 0px;
+//     }
+//     height: 75px;
+//   }
+//   @media (max-width: 595px) {
+//     justify-content: space-evenly;
+//     .client_logo {
+//       height: 23px;
+//       gap: 0px;
+//     }
+//     .hidable {
+//       display: none;
+//     }
+//   }
 
-  @media (max-width: 432px) {
-    .client_logo {
-      height: 24px;
-    }
-    width: calc(100vw);
-  }
-`;
+//   @media (max-width: 432px) {
+//     .client_logo {
+//       height: 24px;
+//     }
+//     width: calc(100vw);
+//   }
+// `;
 
 const Main = styled.div`
   max-width: var(--max-box-width);
